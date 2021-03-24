@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>To Do List</h1>
+    <section id="todolist">
+
+
+    </section>
+
+    <section id="detail" class="hide">
+      
+        <h2></h2>
+        <p></p>
+
+    </section>
+
+    <div id="button">
+        <button id="addTask"><i class="fas fa-plus-square"> Ajouter</i></button>
+        <button id="deleteAll"><i class="fas fa-trash"> Supprimer tout</i></button>
+    </div>
+    <form action="" class="hide" id="taskForm" >
+        <input type="text" name="title" id="title" placeholder="Titre de la tâche" required>
+        <select name="level" id="level">
+            <option value="0">Pas encore commencée</option>
+            <option value="25">25%</option>
+            <option value="50">50%</option>
+            <option value="75">75%</option>
+            <option value="100">Terminé</option>
+        </select>
+        <textarea name="description" id="description" cols="30" rows="10" placeholder="Description de la tâche"></textarea>
+        <input type="submit" value="Enregistrer">
+    </form>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
